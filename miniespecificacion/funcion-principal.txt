@@ -1,0 +1,262 @@
+PROYECTO FINAL
+-Carlos Mejia
+-Richard Ortiz
+Inicio 
+funcion principal()
+	bandera,l<-true
+	opcion,i[0-n]
+	terminar,x(10)[{x}{X}]
+	contador,i[0-n]<-0
+	mensaje,x(200)[{a-z},{A-Z},{0-9},{BS}]
+	Mientras(bandera == true)entonces
+		<<"Ingrese 1 para crear cuenta Facebook"+ \n +
+		   Ingrese 2 para crear cuenta Twitter"+ \n +
+		   Ingrese 3 para crear cuenta Whatsapp"+ \n +
+		   Ingrese 4 para crear cuenta Telegram"+ \n +
+		   Ingrese 5 para crear cuenta Signal"+ \n +
+		   Ingrese 6 para crear cuenta Instagram"+ \n +
+		   Ingrese 7 para crear cuenta FLickr"+ \n
+		>>opcion
+		Si(opcion == 1)enonces
+			crearFacebook()
+			contador<-contador + 1
+		De lo contrario
+			Si(opcion == 2)enonces
+				crearTwitter()
+				contador<-contador + 1
+			De lo contraio
+				Si(opcion == 3)enonces
+					crearWhatsapp()
+					contador<-contador + 1
+				De lo contrario
+					Si(opcion == 4)enonces
+						crearTelegram()
+						contador<-contador + 1
+					De lo contrario
+						Si(opcion == 5)enonces
+							crearSignal()
+							contador<-contador + 1
+						De lo contraio
+							Si(opcion == 6)enonces
+								crearInstagram()
+								contador<-contador + 1
+							De lo contraio
+								Si(opcion == 7)enonces
+									crearFLickr()
+									contador<-contador + 1
+								De lo contraio
+									Si(opcion<7)entoces
+										<<"Error en opcion seleccionada"
+									FinSi	
+							 	FinSi
+							FinSi
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+		<<\n+"Si desea salir del proceso ingrese "x" de lo contraio precione cualquier tecla"
+		>>terminar
+		Si(terminar=="x" or terminar=="X")entonces
+			bandera<-false
+		FinSi
+		<<"Numero de cuentas creadas" + contador
+		<<obtenerMensaje(contador)
+
+fin funcion principal
+
+funcion crearFacebook()
+
+	nombreU,x(100)[{a-z},{A-Z},{0-9},{BS}]
+	edad,i[0-n]
+	ciudad,x(100)[{a-z},{A-Z},{BS}]
+	pais,x(100)[{a-z},{A-Z},{BS}]
+	correo,x(100)[{a-z},{A-Z},{@,.},{BS}]
+	mensaje,x(100)[{a-z},{A-Z},{@,.},{BS}]
+	<<"Ingrese su nombre de usuario"
+	>>nombreU
+	<<"Ingrese su edad"
+	>>edad
+	<<"Ingrese su ciudad"
+	>>ciudad
+	<<"Ingrese su pais"
+	>>pais
+	<<"Ingrese su correo electronico"
+	>>correo
+	mensaje<-"Su nombre de usuario es: " + nombreU + \n +
+		 "Su edad es: " + edad + \n +
+		 "Su ciudad y pais son: " + cidad + pais + \n +
+		 "Su correo electronico es: " + correo + \n 
+	<<mensaje
+
+fin funcion crearFacebook
+
+funcion crearTwitter()
+
+	nombreU,x(100)[{a-z},{A-Z},{0-9},{BS}]
+	nombres,x(100)[{a-z},{A-Z},{BS}]
+	apellidos,x(100)[{a-z},{A-Z},{BS}]
+	edad,i[0-n]
+	ciudad,x(100)[{a-z},{A-Z},{BS}]
+	pais,x(100)[{a-z},{A-Z},{BS}]
+	idioma,x(100)[{a-z},{A-Z},{BS}]
+	correo,x(100)[{a-z},{A-Z},{@,.},{BS}]
+	mensaje,x(100)[{a-z},{A-Z},{@,.},{BS}]
+	<<"Ingrese su nombre de usuario"
+	>>nombreU
+	<<"Ingrese sus nombres"
+	>>nombres
+	<<"Ingrese sus apellidos"
+	>>apellidos
+	<<"Ingrese su edad"
+	>>edad
+	<<"Ingrese su ciudad"
+	>>ciudad
+	<<"Ingrese su pais"
+	>>pais
+	<<"Ingrese el idioma que mas domine"
+	>>idioma
+	<<"Ingrese su correo electronico"
+	>>correo
+	mensaje<-"Su nombre de usuario es: " + nombreU + \n +
+		 "Sus nombres y apellidos son: " + nombres + apellidos + \n +
+		 "Su edad es: " + edad + \n +
+		 "Su ciudad y pais son: " + cidad + pais + \n +
+		 "El idioma que mas domina es: " + idioma + \n +
+		 "Su correo electronico es: " + correo + \n 
+	<<mensaje
+
+fin funcion crearTwitter
+
+funcion crearWhatsapp()
+
+	nombreU,x(100)[{a-z},{A-Z},{0-9},{BS}]
+	numero,i[0-n]
+	edad,i[0-n]
+	ciudad,x(100)[{a-z},{A-Z},{BS}]
+	pais,x(100)[{a-z},{A-Z},{BS}]
+	mensaje,x(100)[{a-z},{A-Z},{@,.},{BS}]
+	<<"Ingrese su nombre de usuario"
+	>>nombreU
+	<<"Ingrese su numero de telefono
+	>>numero
+	<<"Ingrese su edad"
+	>>edad
+	<<"Ingrese su ciudad"
+	>>ciudad
+	<<"Ingrese su pais"
+	>>pais
+	mensaje<-"Su nombre de usuario es: " + nombreU + \n +
+		 "Sus numero de telefono es: " + numero + \n +
+		 "Su edad es: " + edad + \n +
+		 "Su ciudad y pais son: " + cidad + pais + \n
+	<<mensaje
+
+fin funcion crearWhatsapp
+
+funcion crearTelegram()
+
+	nombreU,x(100)[{a-z},{A-Z},{0-9},{BS}]
+	numero,i[0-n]
+	ciudad,x(100)[{a-z},{A-Z},{BS}]
+	pais,x(100)[{a-z},{A-Z},{BS}]
+	aInteres,x(100)[{a-z},{A-Z},{BS}]
+	mensaje,x(100)[{a-z},{A-Z},{@,.},{BS}]
+	<<"Ingrese su nombre de usuario"
+	>>nombreU
+	<<"Ingrese su numero de telefono
+	>>numero
+	<<"Ingrese su ciudad"
+	>>ciudad
+	<<"Ingrese su pais"
+	>>pais
+	<<"Ingrese su Area de Interes"
+	>>aInteres
+	mensaje<-"Su nombre de usuario es: " + nombreU + \n +
+		 "Sus numero de telefono es: " + numero + \n +
+		 "Su ciudad y pais son: " + cidad + pais + \n +
+		 "Su area de interes es : " + aInteres + \n
+	<<mensaje
+
+fin funcion crearTelegram
+
+funcion crearSignal()
+	nombreU,x(100)[{a-z},{A-Z},{0-9},{BS}]
+	numero,i[0-n]
+	ciudad,x(100)[{a-z},{A-Z},{BS}]
+	pais,x(100)[{a-z},{A-Z},{BS}]
+	hobby,x(100)[{a-z},{A-Z},{BS}]
+	mensaje,x(100)[{a-z},{A-Z},{@,.},{BS}]
+	<<"Ingrese su nombre de usuario"
+	>>nombreU
+	<<"Ingrese su numero de telefono
+	>>numero
+	<<"Ingrese su ciudad"
+	>>ciudad
+	<<"Ingrese su pais"
+	>>pais
+	<<"Ingrese su hobby principal"
+	>>hobby
+	mensaje<-"Su nombre de usuario es: " + nombreU + \n +
+		 "Sus numero de telefono es: " + numero + \n +
+		 "Su ciudad y pais son: " + cidad + pais + \n +
+		 "Su hobby principal es: " + hobby + \n
+	<<mensaje
+
+fin funcion crearSigmal
+
+funcion crearInstagram()
+	nombreU,x(100)[{a-z},{A-Z},{0-9},{BS}]
+	ciudad,x(100)[{a-z},{A-Z},{BS}]		 
+	edad,i[0-n]
+	correo,x(100)[{a-z},{A-Z},{@,.},{BS}]
+	mensaje,x(100)[{a-z},{A-Z},{@,.},{BS}]
+	<<"Ingrese su nombre de usuario"
+	>>nombreU	
+	<<"Ingrese su ciudad"
+	>>ciudad
+	<<"Ingrese su edad"
+	>>edad
+	<<"Ingrese su correo electronico"
+	>>correo
+	mensaje<-"Su nombre de usuario es: " + nombreU + \n +
+		 "Su ciudad es: " + cidad + \n +
+		 "Su edad es: " + edad + \n +
+		 "Su correo electronico es: " + correo + \n 
+	<<mensaje
+
+fin funcion crearInstagram
+
+funcion crearFlickr()
+	nombreU,x(100)[{a-z},{A-Z},{0-9},{BS}]
+	correo,x(100)[{a-z},{A-Z},{@,.},{BS}]
+	mensaje,x(100)[{a-z},{A-Z},{@,.},{BS}]
+	mensaje<-"Su nombre de usuario es: " + nombreU + \n +
+		 "Su correo electronico es: " + correo + \n 
+	<<mensaje
+
+fin funcion crearFlickr
+
+funcion obtenerMensaje(contador)
+	mensajeFinal(3),X(300)[{a-z},{A-Z},{BS}]
+	mensajeFinal<-{"Campaña con poca afluencia",
+		       "Campaña moderada siga adelante",
+		       "Excelente campaña"}
+	mensaje,x(100)[{a-z},{A-Z},{BS}]
+	Si(contador>=1 and contador<=5)entoces
+		mensaje<-mensajeFinal[0]
+	De lo contrario
+		Si(contador>=6 and contador<=15)entoces
+			mensaje<-mensajeFinal[1]
+		De lo contrario
+			Si(contador>=16)entoces
+				mensaje<-mensajeFinal[2]
+			FinSi
+		FinSi
+	FinSi
+	<<mensaje
+
+fin funcion obtenerMensaje
+Fin
+
+
